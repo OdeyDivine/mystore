@@ -1,0 +1,253 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Karma", sans-serif 
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: hsl(0, 0%, 100%);
+    padding: 0 20px;
+    height: 70px;
+    position: fixed;
+    width: 100%;
+}
+
+#menu:hover{
+    font-size: 2rem;
+    color: rgb(107, 8, 8);
+}
+
+nav a{
+    color: black;
+    text-decoration: none;  
+    font-weight: lighter;  
+}
+nav.visible{
+    display:block;
+    padding-top: 180px;
+    transition: transform 0,2s ease-in-out;
+    transform: translateX(-100%);
+}
+
+#visible {
+    display: none;
+    position: fixed;
+    top: 70px;
+    left: 0;
+    background: white;
+    width: 100vw;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transform: translateX(0);
+    transition: all 1s ease-in-out;
+}
+
+#visible.show {
+    display: block;
+    transform: translateY(0);
+    transition: all 1s ease-in-out;
+}
+
+nav a:hover{
+    border-bottom: 3px solid black;
+}
+
+ul{
+    display: flex;
+    gap: 25px;
+    list-style-type: none;
+}
+
+ul li a{
+    color: black;
+    text-decoration: none;
+}
+
+ul li{
+    padding: 15px 0;
+}
+ul li:hover{
+    background-color:rgba(202, 198, 198, 0.801);
+    width: 100%;
+}
+.food{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    text-align: center;
+    padding: 30px;
+    line-height: 2.4rem;
+}
+
+@media (max-width: 1200px) {
+    .food {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 900px) {
+    .food {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .food {
+        grid-template-columns: 1fr;
+    }
+}
+p{
+    line-height: 1.6rem;
+}
+.food img{
+   max-width: 100%;
+   height: auto;
+}
+.clickable{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0;
+}
+.btn button{
+    background-color: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    font-size: 15px;    
+}
+.btn button:hover{
+    background-color: black;
+    color: white;
+}
+.btn button:active{
+    background-color: black;
+    color: white;
+}
+.article{
+    padding: 0 30px;
+    background-color:hsla(0, 23%, 95%,);
+    border-top: 1px solid rgb(206, 203, 203);
+    border-bottom: 1px solid rgb(206, 203, 203);
+}
+.about{
+    text-align: center;
+    padding: 60px 0 30px;
+}
+
+.image img{
+    width: 100%;
+    height: 100%;
+    padding: 100px;
+}
+.bio h3{
+    text-align: center;
+    padding-bottom: 10px;
+}
+.bio .top{
+    padding: 10px 0;
+    text-align: center;
+}
+.bio .bottom{
+    text-align: center;
+    padding-bottom: 70px;
+}
+.footer{
+    padding: 0 30px;
+    display: grid;
+    column-gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+@media (max-width: 1200px){
+    .footer{
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+    }
+}  
+
+@media (max-width: 900px){
+    .footer{
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+}
+
+
+ @media (max-width: 600px) {
+    .footer {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+     
+.f-one{
+    padding: 50px 0 20px;
+}
+.f-two{
+    line-height: 1.6rem;
+    padding: 0 0 12px;
+}
+.f-three{
+    padding-bottom: 10px;
+}
+.f-three a{
+    color: black;
+}
+.f-four{
+    padding: 15px 0;
+}
+.f-five-one img, .f-five-two img{
+    width: 70px;
+    height: 70px;
+}
+.f-five-one, .f-five-two{
+    display: flex;
+    padding: 20px 10px 15px;
+    align-items: center;
+}
+.f-five-one h3,p, .f-five-two h3,p{
+    padding-left: 15px;
+}
+.f-five-one{
+    border-bottom: 1px solid rgb(153, 153, 148, 0.5);
+}
+.f-five-one:hover, .f-five-two:hover{
+    background-color: rgb(153, 153, 148, 0.5);
+}
+.f-six{
+    padding: 10px;
+}
+.f-seven{
+    padding: 20px 0 50px;
+    display: grid;
+    column-gap: 5px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.f-seven button{
+    background-color: rgb(172, 166, 166);
+    color: white;
+    width: auto;
+    height: auto;
+    margin: 3px;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+}
+.f-seven button:hover{
+    background-color: rgb(150, 144, 144);
+}
+.f-seven button:active{
+    background-color: rgb(130, 124, 124);
+}

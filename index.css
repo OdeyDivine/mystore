@@ -1,0 +1,39 @@
+body{
+    font-family: sans-serif;
+    background-color: white;    
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: sticky;
+    background-color: white;
+    
+}
+
+
+
+.lhead{
+    float: left;
+    display: flex;
+    font-size: 30px;
+}
+.rhead{
+    float:right ;
+    font-size: 30px;
+    
+}
+a{
+    text-decoration: none;
+    color: black;
+
+}
+a:hover{
+    cursor: pointer;
+    
+}
+img{
+    width: 100vw;
+}
