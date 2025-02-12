@@ -11,8 +11,3 @@ closed.addEventListener("click", () => {
 });
 
 
-document.querySelectorAll('#chop').forEach(button => {
-    button.addEventListener('click', () => {
-      document.getElementById('food').scrollIntoView({ behavior: 'smooth' });
-    });
-  });
