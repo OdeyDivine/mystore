@@ -165,6 +165,8 @@ p{
     padding: 0 30px;
     display: grid;
     column-gap: 10px;
+    justify-content: center;
+    align-items: center;
     grid-template-columns: repeat(3, 1fr);
 }
 
@@ -198,6 +200,9 @@ p{
 .f-two{
     line-height: 1.6rem;
     padding: 0 0 12px;
+}
+.f-two p, a{
+    padding: 0;
 }
 .f-three{
     padding-bottom: 10px;
