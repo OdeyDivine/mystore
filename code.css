@@ -20,10 +20,11 @@ nav{
     width: 100%;
 }
 
-#menu:hover{
-    font-size: 2rem;
-    color: rgb(107, 8, 8);
+#menu:hover {
+    transform: scale(2);
+    transition: transform 0.1s ease-in-out;
 }
+
 
 nav a{
     color: black;
@@ -147,7 +148,7 @@ p{
 .image img{
     width: 100%;
     height: 100%;
-    padding: 100px;
+    padding: 10px;
 }
 .bio h3{
     text-align: center;
